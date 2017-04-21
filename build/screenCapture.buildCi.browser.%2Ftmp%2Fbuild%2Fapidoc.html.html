@@ -1,0 +1,361 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/halt-hammerzeit/universal-webpack#readme">universal-webpack (v0.3.9)</a>
+</h1>
+<h4>Isomorphic Webpack</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.universal-webpack">module universal-webpack</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">universal-webpack.</span>babel_register</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">universal-webpack.</span>chunks</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">universal-webpack.</span>devtools</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">universal-webpack.</span>output_webpack_stats</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">universal-webpack.</span>prepare</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.universal-webpack.babel_register">module universal-webpack.babel_register</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.universal-webpack.babel_register.babel_register_options">
+            function <span class="apidocSignatureSpan">universal-webpack.babel_register.</span>babel_register_options
+            <span class="apidocSignatureSpan">(universal_webpack_settings, webpack_configuration)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.universal-webpack.chunks">module universal-webpack.chunks</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.universal-webpack.chunks.chunk_info_file_path">
+            function <span class="apidocSignatureSpan">universal-webpack.chunks.</span>chunk_info_file_path
+            <span class="apidocSignatureSpan">(webpack_configuration, chunk_info_filename)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.universal-webpack.devtools">module universal-webpack.devtools</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.universal-webpack.devtools.default">
+            function <span class="apidocSignatureSpan">universal-webpack.devtools.</span>default
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.universal-webpack.output_webpack_stats">module universal-webpack.output_webpack_stats</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.universal-webpack.output_webpack_stats.default">
+            function <span class="apidocSignatureSpan">universal-webpack.output_webpack_stats.</span>default
+            <span class="apidocSignatureSpan">(stats, json, verbose)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.universal-webpack.prepare">module universal-webpack.prepare</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.universal-webpack.prepare.default">
+            function <span class="apidocSignatureSpan">universal-webpack.prepare.</span>default
+            <span class="apidocSignatureSpan">(settings, webpack_configuration)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.universal-webpack" id="apidoc.module.universal-webpack">module universal-webpack</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.universal-webpack.babel_register" id="apidoc.module.universal-webpack.babel_register">module universal-webpack.babel_register</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.universal-webpack.babel_register.babel_register_options" id="apidoc.element.universal-webpack.babel_register.babel_register_options">
+        function <span class="apidocSignatureSpan">universal-webpack.babel_register.</span>babel_register_options
+        <span class="apidocSignatureSpan">(universal_webpack_settings, webpack_configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function babel_register_options(universal_webpack_settings, webpack_configuration) {
+	var server_side_bundle_path = _path2.default.resolve(webpack_configuration.context, universal_webpack_settings.server.output);
+
+	// For some weird reason Babel `filename` has posix slashes
+	// instead of standard Windows slashes on Windows operating system.
+	server_side_bundle_path = server_side_bundle_path.replace(/\\/g, _path2.default.posix.sep);
+
+	// `babel-register` options
+	var options = {
+		ignore: function ignore(filename) {
+			// Ignore all `node_modules` folders
+			if (filename.indexOf(node_modules) &gt;= 0) {
+				return true;
+			}
+
+			// Ignore the server-side bundle
+			if (filename === server_side_bundle_path) {
+				return true;
+			}
+
+			return false;
+		}
+	};
+
+	return options;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.universal-webpack.chunks" id="apidoc.module.universal-webpack.chunks">module universal-webpack.chunks</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.universal-webpack.chunks.chunk_info_file_path" id="apidoc.element.universal-webpack.chunks.chunk_info_file_path">
+        function <span class="apidocSignatureSpan">universal-webpack.chunks.</span>chunk_info_file_path
+        <span class="apidocSignatureSpan">(webpack_configuration, chunk_info_filename)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function chunk_info_file_path(webpack_configuration, chunk_info_filename) {
+	return _path2.default.join(webpack_configuration.output.path, chunk_info_filename || 'webpack-chunks.json');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.universal-webpack.devtools" id="apidoc.module.universal-webpack.devtools">module universal-webpack.devtools</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.universal-webpack.devtools.default" id="apidoc.element.universal-webpack.devtools.default">
+        function <span class="apidocSignatureSpan">universal-webpack.devtools.</span>default
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function devtools(parameters) {
+	var chunks = parameters.chunks();
+
+	var style_url = chunks.styles[parameters.entry];
+	var common_style_url = chunks.styles.common;
+
+	var get_style_link_element_script = function get_style_link_element_script(url) {
+		return 'document.querySelector(\'head &gt; link[rel="stylesheet"][href="' + url + '"]\')';
+	};
+
+	var script = '\n\t\tdocument.addEventListener(\'DOMContentLoaded\', function(event)\n\t\t{\n\t\t\t// The style-loader has already
+ added &lt;link/&gt;s\n\t\t\t// to its dynamic hot-reloadable styles,\n\t\t\t// so remove the &lt;link/&gt; to the static CSS bundle\n\t\t\t// inserted during server side page rendering.\n\t\t\t\n\t\t\tvar stylesheet\n\t\t\tvar common_stylesheet\n\n\t\t\t' + (style_url ? 'stylesheet        = ' + get_style_link_element_script(style_url) : '') + '\n\t\t\t' + (common_style_url ? 'common_stylesheet = ' + get_style_link_element_script(common_style_url) : '') + '\n\n\t\t\t// Waits a "magical" time amount of one second\n\t\t\t// for the dynamically added stylesheets\n\t\t\t// to be parsed and applied to the page.\n\t\t\tsetTimeout(function()\n\t\t\t{\n\t\t\t\tstylesheet        &amp;&amp; stylesheet.parentNode.removeChild(stylesheet)\n\t\t\t\tcommon_stylesheet &amp;&amp; common_stylesheet.parentNode.removeChild(common_stylesheet)\n\t\t\t},\n\t\t\t1000)\n\t\t})\n\t';
+
+	return script;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.universal-webpack.output_webpack_stats" id="apidoc.module.universal-webpack.output_webpack_stats">module universal-webpack.output_webpack_stats</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.universal-webpack.output_webpack_stats.default" id="apidoc.element.universal-webpack.output_webpack_stats.default">
+        function <span class="apidocSignatureSpan">universal-webpack.output_webpack_stats.</span>default
+        <span class="apidocSignatureSpan">(stats, json, verbose)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function output_webpack_stats(stats, json, verbose) {
+	// if there were any errors
+	if (json.errors.length &gt; 0) {
+		was_faulty = true;
+		return json.errors.forEach(error);
+	}
+
+	// if there were any warnings
+	if (json.warnings.length &gt; 0) {
+		json.warnings.forEach(warning);
+	}
+
+	// if it's ok
+
+	if (!verbose &amp;&amp; !first_run &amp;&amp; was_faulty) {
+		// green colour
+		console.log(_safe2.default.green('~ Webpack build status: OK ~'));
+
+		was_faulty = false;
+	}
+
+	if (verbose || first_run) {
+		console.log(stats.toString({
+			chunks: false,
+			colors: true
+		}));
+
+		first_run = false;
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.universal-webpack.prepare" id="apidoc.module.universal-webpack.prepare">module universal-webpack.prepare</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.universal-webpack.prepare.default" id="apidoc.element.universal-webpack.prepare.default">
+        function <span class="apidocSignatureSpan">universal-webpack.prepare.</span>default
+        <span class="apidocSignatureSpan">(settings, webpack_configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepare(settings, webpack_configuration) {
+	// By default, Webpack sets `context` to `process.cwd()`
+	var base_path = webpack_configuration &amp;&amp; webpack_configuration.context || process.cwd();
+
+	if (!settings.server.output) {
+		throw new Error('`settings.server.output` not specified');
+	}
+
+	var server_build_bundle_path = _path2.default.resolve(base_path, settings.server.output);
+	var server_build_folder = _path2.default.dirname(server_build_bundle_path);
+
+	// Extra caution to prevent data loss
+	if (server_build_folder === _path2.default.normalize(base_path)) {
+		throw new Error('`settings.server.output` "' + server_build_folder + '" points to the project root folder. Won\'t clear that folder
+ to prevent accidental data loss.');
+	}
+
+	// Extra caution to prevent data loss
+	if (server_build_folder.indexOf(base_path) !== 0) {
+		throw new Error('`settings.server.output` "' + server_build_folder + '" points outside of the project root folder "' + base_path
+ + '". Won\'t clear that folder to prevent accidental data loss');
+	}
+
+	_fsExtra2.default.emptyDirSync(server_build_folder);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
